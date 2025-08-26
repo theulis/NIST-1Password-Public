@@ -10,6 +10,23 @@ This Python script retrieves all known CVEs (Common Vulnerabilities and Exposure
 - Handles network errors and retries failed requests (no NVD API key is used)  
 - Displays a temporary progress bar which disappears after completion
 
+**Sample output**
+```bash
+Application Name,CVE ID,CVSS Score
+1Password,CVE-2022-32550,4.8
+1Password,CVE-2024-42218,4.7
+1Password,CVE-2024-42219,7.8
+[#########-------------------------------] 23%
+```
+
+**Final Output**
+```bash
+Application Name,CVE ID,CVSS Score
+1Password,CVE-2022-32550,4.8
+1Password,CVE-2024-42218,4.7
+1Password,CVE-2024-42219,7.8
+```
+
 *✅ This script has been tested on Python 3.13.7*
 
 ## Installation
@@ -38,4 +55,5 @@ python3 ~/NIST-CVE-1Password.py
 
 ## Improvements / Future Work
 ⚙️ As mentioned, this script does not use an official NVD API to fetch CVEs, so some requests may fail. Based on current tests, a few 1Password version vulnerability checks may fail, but this does not impact the overall results. Re-attempts have been implemented to handle this, but due to project time constraints, no further improvements will be made in this version. 
+
 🔗 Integration with MDM can be implemented to fetch the currently used versions of 1Password. Example: [Kandji Prism API](https://api-docs.kandji.io/#0de36993-c9d8-4d58-8dce-a2616bc2e743)  
