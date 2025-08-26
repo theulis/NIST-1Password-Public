@@ -31,7 +31,7 @@ bash "/Applications/$(python3 -c 'import sys; print("Python {}.{}".format(sys.ve
 Sample instructions for downloading and running the script:
 
 ```bash
-curl -o ~/NIST-CVE-1Password.py https://raw.githubusercontent.com/theulis/NIST/main/NIST-CVE-1Password.py
+curl -o ~/NIST-CVE-1Password.py https://raw.githubusercontent.com/theulis/NIST-1Password-Public/refs/heads/main/NIST-CVE-1Password.py
 chmod +x ~/NIST-CVE-1Password.py
 python3 ~/NIST-CVE-1Password.py
 ```
