@@ -56,4 +56,5 @@ python3 ~/NIST-CVE-1Password.py
 ## Improvements / Future Work
 ⚙️ As mentioned, this script does not use an official NVD API to fetch CVEs, so some requests may fail. Based on current tests, a few 1Password version vulnerability checks may fail, but this does not impact the overall results. Re-attempts have been implemented to handle this, but due to project time constraints, no further improvements will be made in this version. 
 
-🔗 Integration with MDM can be implemented to fetch the currently used versions of 1Password. Example: [Kandji Prism API](https://api-docs.kandji.io/#0de36993-c9d8-4d58-8dce-a2616bc2e743)  
+🔗 Integration with MDM can be implemented to fetch the currently used versions of 1Password. Example: [Kandji Prism API](https://api-docs.kandji.io/#0de36993-c9d8-4d58-8dce-a2616bc2e743)
+For more info, check Repo (https://github.com/theulis/NIST-1Password-Kandji-Public) ✅
